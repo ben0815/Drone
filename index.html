@@ -1,0 +1,14 @@
+<html>
+<script type="text/javascript">
+	var arDrone=require('ar-drone');
+	var client=arDrone.createClient();
+	function takingoff() {
+		client.takeoff();
+	}
+	function landing() {
+		client.land();
+	}
+</script>
+<button onclick="takingoff()">Takeoff</button>
+<button onclick="landing()">Landing</button>
+</html>
